@@ -1,0 +1,13 @@
+extends ../layouts/main.pug
+
+//- Блок переменных, подставляем разный title и класс для body для разных страниц
+block variables
+	- var title = "Главная страница";
+	- var pageClass= "home";
+
+//- Здесь удобно инклюдить по секциям и код разбивать по файлам
+block content
+	include ../sections/body-part.pug
+
+//- Здесь можно подключать скрипты для конкретной страницы
+block scripts
